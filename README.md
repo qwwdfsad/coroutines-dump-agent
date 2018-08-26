@@ -6,5 +6,5 @@ PoC servisability agent which scans heap of the target process for `Continuation
 `sa-jdi.jar` from dependencies should match target process Java version.
 
 Use:
-`mvn clean package && java -cp target/agent.jar:dependencies/sa-jdi.jar $PID`
+`mvn clean package && java -cp target/agent.jar:dependencies/sa-jdi.jar org.qwwdfsad.CoroutineDumpKt $PID`
 On Mac OS X, attach should be ran with `sudo` (yay, servisability!)
